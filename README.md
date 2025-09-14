@@ -52,5 +52,5 @@
 
 ### 4.2 Citeseer数据集上的节点分类任务准确率
 
-![Citeseer数据集](image/Citeseer_hyperparameter_tuning_results.png)
+![Citeseer数据集](image/citeseer_hyperparameter_tuning_results.png)
 *图5：Citeseer数据集上的节点分类任务准确率*
