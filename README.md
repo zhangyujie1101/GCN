@@ -54,6 +54,7 @@
 ## 4. 数据集上的节点分类任务准确率
 
 运行时提示找不到包，注意用 PYTHONPATH=. python gcn/train.py 指定数据集加入 --dataset  citeseer
+
 官方代码中未放nell数据集，但是论文实验中有一个nell数据集
 
 ### 4.1 Cora数据集上的节点分类任务准确率
