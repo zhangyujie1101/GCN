@@ -1,2 +1,0 @@
-运行时提示找不到包，注意用     PYTHONPATH=. python gcn/train.py    指定数据集加入   --dataset  citeseer
-官方代码中未放nell数据集，但是论文实验中有一个nell数据集，可能还需要
