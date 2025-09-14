@@ -126,23 +126,23 @@
   <p><em>图8：Cora数据集删除节点效果</em></p>
 </div>
 
-### 5.2 往Cora数据集中随机增加n个节点，可视化增加后模型分类效果
+### 6.2 往Cora数据集中随机增加n个节点，可视化增加后模型分类效果
 
 <div align="center">
   <img src="image/Escape Attack/t-SNE Visualization of Node Embeddings (Injected Nodes Highlighted).png" alt="逃逸攻击增加节点" />
   <p><em>图9：Cora数据集增加节点效果</em></p>
 </div>
 
-### 5.3 往数据集中添加节点可以扰动模型的分类效果，这就是节点注入攻击
+### 6.3 往数据集中添加节点可以扰动模型的分类效果，这就是节点注入攻击
 
-#### 5.3.1 当m为随机抽取m个邻居时，可视化攻击后模型分类效果
+#### 6.3.1 当m为随机抽取m个邻居时，可视化攻击后模型分类效果
 
 <div align="center">
   <img src="image/Escape Attack/t-SNE Visualization of Node Embeddings (Injected Node Highlighted-Random).png" alt="逃逸攻击单节点注入" />
   <p><em>图10：Cora数据集单节点注入效果</em></p>
 </div>
 
-#### 5.3.2 当m为抽取度值最大的m个邻居时，可视化攻击后模型分类效果
+#### 6.3.2 当m为抽取度值最大的m个邻居时，可视化攻击后模型分类效果
 
 <div align="center">
   <img src="image/Escape Attack/t-SNE Visualization of Node Embeddings (Injected Node Highlighted-Max Degree).png" alt="逃逸攻击单节点注入" />
