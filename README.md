@@ -6,7 +6,7 @@
 
 图卷积神经网络（GCN）的工作原理主要基于层间的传播规则，通过特征传递来实现对图结构数据的处理：
 
-![特征传递规则](image\传播公式.png)
+![特征传递规则](image/传播公式.png)
 *图1：GCN中的特征传递规则公式*
 
 ---
@@ -24,7 +24,7 @@
 
 ### 2.2 CNN与MLP的区别
 
-![MLP与CNN的区别](image\MLPvsCNN.png)
+![MLP与CNN的区别](image/MLPvsCNN.png)
 *图2：多层感知器（MLP）与卷积神经网络（CNN）的对比*
 
 ---
@@ -33,12 +33,12 @@
 
 ### 3.1 GCN与MLP的区别
 
-![MLP与GCN的区别](image\MLPvsGCN.png)
+![MLP与GCN的区别](image/MLPvsGCN.png)
 *图3：多层感知器（MLP）与图卷积神经网络（GCN）的对比*
 
 ### 3.2 GCN与CNN的区别
 
-![GCN与CNN的区别](image\CNNvsGCN.png)
+![GCN与CNN的区别](image/CNNvsGCN.png)
 *图4：图卷积神经网络（GCN）与卷积神经网络（CNN）的对比*
 
 ---
@@ -47,10 +47,10 @@
 
 ### 4.1 Cora数据集上的节点分类任务准确率
 
-![Cora数据集](image\cora_hyperparameter_tuning_results.png)
+![Cora数据集](image/cora_hyperparameter_tuning_results.png)
 *图4：Cora数据集上的节点分类任务准确率*
 
 ### 4.2 Citeseer数据集上的节点分类任务准确率
 
-![Citeseer数据集](image\Citeseer_hyperparameter_tuning_results.png)
+![Citeseer数据集](image/Citeseer_hyperparameter_tuning_results.png)
 *图5：Citeseer数据集上的节点分类任务准确率*
