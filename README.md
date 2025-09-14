@@ -80,6 +80,6 @@
 提示：随机删除可以理解为，对应节点的特征置为0，同时邻接矩阵对应行列均置为0，该节点成为孤立节点：或者直接从特征矩阵与邻接矩阵中移除该节点对应的属性。
 
 <div align="center">
-  <img src="image/中毒攻击/t-SNE Visualization of Node Embeddings (Isolated Nodes Highlighted).png.png" alt="中毒攻击删除节点" />
+  <img src="image/Poison Attack/t-SNE Visualization of Node Embeddings (Isolated Nodes Highlighted).png" alt="中毒攻击删除节点" />
   <p><em>图6：Cora数据集随机删除节点效果</em></p>
 </div>
