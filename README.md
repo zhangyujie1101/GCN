@@ -61,25 +61,58 @@
 
 <div align="center">
   <img src="image/cora_hyperparameter_tuning_results.png" alt="Cora数据集" />
-  <p><em>图5：Cora数据集上的节点分类任务准确率</em></p>
+  <p><em>图2：Cora数据集上的节点分类任务准确率</em></p>
 </div>
 
 ### 4.2 Citeseer数据集上的节点分类任务准确率
 
 <div align="center">
   <img src="image/citeseer_hyperparameter_tuning_results.png" alt="Citeseer数据集" />
-  <p><em>图6：Citeseer数据集上的节点分类任务准确率</em></p>
+  <p><em>图3：Citeseer数据集上的节点分类任务准确率</em></p>
 </div>
 
 ---
 
 ## 5. 中毒攻击
 
-### 5.1 随机删除Cora数据集中的n个节点，可视化删除后模型分类效果。
+### 5.1 随机删除Cora数据集中的n个节点，可视化删除后模型分类效果
 
-提示：随机删除可以理解为，对应节点的特征置为0，同时邻接矩阵对应行列均置为0，该节点成为孤立节点：或者直接从特征矩阵与邻接矩阵中移除该节点对应的属性。
+随机删除可以理解为，对应节点的特征置为0，同时邻接矩阵对应行列均置为0，该节点成为孤立节点：或者直接从特征矩阵与邻接矩阵中移除该节点对应的属性
 
 <div align="center">
   <img src="image/Poison Attack/t-SNE Visualization of Node Embeddings (Isolated Nodes Highlighted).png" alt="中毒攻击删除节点" />
-  <p><em>图6：Cora数据集随机删除节点效果</em></p>
+  <p><em>图4：Cora数据集删除节点效果</em></p>
 </div>
+
+### 5.2 往Cora数据集中随机增加n个节点，可视化增加后模型分类效果
+
+随机增加可以理解为，往特征矩阵与邻接矩阵中添加额外的节点属性，添加节点的特征可以是随机生成的，也可以是平均特征等等；添加节点的邻居可以是以随机抽取m个节点作为其邻居，m在合理情况下应小于等于Cora数据集的平均度值
+
+<div align="center">
+  <img src="image/Poison Attack/t-SNE Visualization of Node Embeddings (Injected Nodes Highlighted).png" alt="中毒攻击增加节点" />
+  <p><em>图5：Cora数据集增加节点效果</em></p>
+</div>
+
+### 5.3 往数据集中添加节点可以扰动模型的分类效果，这就是节点注入攻击
+
+考虑单节点注入攻击，同时该节点可以拥有m个邻居，m为攻击预算，是超参数
+
+#### 5.3.1 当m为随机抽取m个邻居时，可视化攻击后模型分类效果
+
+<div align="center">
+  <img src="image/Poison Attack/t-SNE Visualization of Node Embeddings (Injected Node Highlighted-Random).png" alt="中毒攻击单节点注入" />
+  <p><em>图6：Cora数据集单节点注入效果</em></p>
+</div>
+
+#### 5.3.2 当m为抽取度值最大的m个邻居时，可视化攻击后模型分类效果
+
+<div align="center">
+  <img src="image/Poison Attack/t-SNE Visualization of Node Embeddings (Injected Node Highlighted-Max Degree).png" alt="中毒攻击单节点注入" />
+  <p><em>图7：Cora数据集单节点注入效果</em></p>
+</div>
+
+---
+
+## 6. 逃逸攻击
+
+### 5.1 随机删除Cora数据集中的n个节点，可视化删除后模型分类效果
