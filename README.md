@@ -28,7 +28,7 @@
 
 <div align="center">
   <img src="image/MLPvsCNN.png" alt="MLP与CNN的区别" />
-  <p><em>图2：多层感知器（MLP）与卷积神经网络（CNN）的对比</em></p>
+  <p><em>表2：多层感知器（MLP）与卷积神经网络（CNN）的对比</em></p>
 </div>
 
 ---
@@ -39,14 +39,14 @@
 
 <div align="center">
   <img src="image/MLPvsGCN.png" alt="MLP与GCN的区别" />
-  <p><em>图3：多层感知器（MLP）与图卷积神经网络（GCN）的对比</em></p>
+  <p><em>表3：多层感知器（MLP）与图卷积神经网络（GCN）的对比</em></p>
 </div>
 
 ### 3.2 GCN与CNN的区别
 
 <div align="center">
   <img src="image/CNNvsGCN.png" alt="GCN与CNN的区别" />
-  <p><em>图4：图卷积神经网络（GCN）与卷积神经网络（CNN）的对比</em></p>
+  <p><em>表4：图卷积神经网络（GCN）与卷积神经网络（CNN）的对比</em></p>
 </div>
 
 ---
