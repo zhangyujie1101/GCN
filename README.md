@@ -75,6 +75,8 @@
 
 ## 5. 中毒攻击
 
+修改完数据后，重新训练模型，此为中毒攻击，中毒攻击的数据修改一般针对训练集
+
 ### 5.1 随机删除Cora数据集中的n个节点，可视化删除后模型分类效果
 
 随机删除可以理解为，对应节点的特征置为0，同时邻接矩阵对应行列均置为0，该节点成为孤立节点：或者直接从特征矩阵与邻接矩阵中移除该节点对应的属性
@@ -115,4 +117,34 @@
 
 ## 6. 逃逸攻击
 
-### 5.1 随机删除Cora数据集中的n个节点，可视化删除后模型分类效果
+修改完数据后，不重新训练模型，而是直接将数据送入之前训练好的模型中，观察模型分类结果，此为逃逸攻击，逃逸攻击的数据修改一般针对测试集
+
+### 6.1 随机删除Cora数据集中的n个节点，可视化删除后模型分类效果
+
+<div align="center">
+  <img src="image/Escape Attack/t-SNE Visualization of Node Embeddings (Isolated Nodes Highlighted).png" alt="逃逸攻击删除节点" />
+  <p><em>图8：Cora数据集删除节点效果</em></p>
+</div>
+
+### 5.2 往Cora数据集中随机增加n个节点，可视化增加后模型分类效果
+
+<div align="center">
+  <img src="image/Escape Attack/t-SNE Visualization of Node Embeddings (Injected Nodes Highlighted).png" alt="逃逸攻击增加节点" />
+  <p><em>图9：Cora数据集增加节点效果</em></p>
+</div>
+
+### 5.3 往数据集中添加节点可以扰动模型的分类效果，这就是节点注入攻击
+
+#### 5.3.1 当m为随机抽取m个邻居时，可视化攻击后模型分类效果
+
+<div align="center">
+  <img src="image/Escape Attack/t-SNE Visualization of Node Embeddings (Injected Node Highlighted-Random).png" alt="逃逸攻击单节点注入" />
+  <p><em>图10：Cora数据集单节点注入效果</em></p>
+</div>
+
+#### 5.3.2 当m为抽取度值最大的m个邻居时，可视化攻击后模型分类效果
+
+<div align="center">
+  <img src="image/Escape Attack/t-SNE Visualization of Node Embeddings (Injected Node Highlighted-Max Degree).png" alt="逃逸攻击单节点注入" />
+  <p><em>图11：Cora数据集单节点注入效果</em></p>
+</div>
